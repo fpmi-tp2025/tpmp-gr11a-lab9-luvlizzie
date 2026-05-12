@@ -6,7 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		E273CBF62FB337BD000BBFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D376312FB100170009617F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D376382FB100170009617F;
+			remoteInfo = BelarusianPoets;
+		};
+		E273CC052FB337D6000BBFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D376312FB100170009617F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D376382FB100170009617F;
+			remoteInfo = BelarusianPoets;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E273CBF22FB337BD000BBFC1 /* BelarusianPoetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelarusianPoetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E273CBFF2FB337D6000BBFC1 /* BelarusianPoetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelarusianPoetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D376392FB100170009617F /* BelarusianPoets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelarusianPoets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -21,6 +40,16 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		E273CBF32FB337BD000BBFC1 /* BelarusianPoetsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BelarusianPoetsTests;
+			sourceTree = "<group>";
+		};
+		E273CC002FB337D6000BBFC1 /* BelarusianPoetsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BelarusianPoetsUITests;
+			sourceTree = "<group>";
+		};
 		E2D3763B2FB100170009617F /* BelarusianPoets */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,6 +61,20 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E273CBEF2FB337BD000BBFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E273CBFC2FB337D6000BBFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D376362FB100170009617F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				E2D3763B2FB100170009617F /* BelarusianPoets */,
+				E273CBF32FB337BD000BBFC1 /* BelarusianPoetsTests */,
+				E273CC002FB337D6000BBFC1 /* BelarusianPoetsUITests */,
 				E2D3763A2FB100170009617F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				E2D376392FB100170009617F /* BelarusianPoets.app */,
+				E273CBF22FB337BD000BBFC1 /* BelarusianPoetsTests.xctest */,
+				E273CBFF2FB337D6000BBFC1 /* BelarusianPoetsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +108,52 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E273CBF12FB337BD000BBFC1 /* BelarusianPoetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E273CBF82FB337BD000BBFC1 /* Build configuration list for PBXNativeTarget "BelarusianPoetsTests" */;
+			buildPhases = (
+				E273CBEE2FB337BD000BBFC1 /* Sources */,
+				E273CBEF2FB337BD000BBFC1 /* Frameworks */,
+				E273CBF02FB337BD000BBFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E273CBF72FB337BD000BBFC1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E273CBF32FB337BD000BBFC1 /* BelarusianPoetsTests */,
+			);
+			name = BelarusianPoetsTests;
+			packageProductDependencies = (
+			);
+			productName = BelarusianPoetsTests;
+			productReference = E273CBF22FB337BD000BBFC1 /* BelarusianPoetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E273CBFE2FB337D6000BBFC1 /* BelarusianPoetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E273CC072FB337D6000BBFC1 /* Build configuration list for PBXNativeTarget "BelarusianPoetsUITests" */;
+			buildPhases = (
+				E273CBFB2FB337D6000BBFC1 /* Sources */,
+				E273CBFC2FB337D6000BBFC1 /* Frameworks */,
+				E273CBFD2FB337D6000BBFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E273CC062FB337D6000BBFC1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E273CC002FB337D6000BBFC1 /* BelarusianPoetsUITests */,
+			);
+			name = BelarusianPoetsUITests;
+			packageProductDependencies = (
+			);
+			productName = BelarusianPoetsUITests;
+			productReference = E273CBFF2FB337D6000BBFC1 /* BelarusianPoetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E2D376382FB100170009617F /* BelarusianPoets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2D3764C2FB100190009617F /* Build configuration list for PBXNativeTarget "BelarusianPoets" */;
@@ -93,6 +186,14 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					E273CBF12FB337BD000BBFC1 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = E2D376382FB100170009617F;
+					};
+					E273CBFE2FB337D6000BBFC1 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = E2D376382FB100170009617F;
+					};
 					E2D376382FB100170009617F = {
 						CreatedOnToolsVersion = 26.0;
 					};
@@ -115,11 +216,27 @@
 			projectRoot = "";
 			targets = (
 				E2D376382FB100170009617F /* BelarusianPoets */,
+				E273CBF12FB337BD000BBFC1 /* BelarusianPoetsTests */,
+				E273CBFE2FB337D6000BBFC1 /* BelarusianPoetsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E273CBF02FB337BD000BBFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E273CBFD2FB337D6000BBFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D376372FB100170009617F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +247,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E273CBEE2FB337BD000BBFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E273CBFB2FB337D6000BBFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D376352FB100170009617F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,7 +270,102 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E273CBF72FB337BD000BBFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D376382FB100170009617F /* BelarusianPoets */;
+			targetProxy = E273CBF62FB337BD000BBFC1 /* PBXContainerItemProxy */;
+		};
+		E273CC062FB337D6000BBFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D376382FB100170009617F /* BelarusianPoets */;
+			targetProxy = E273CC052FB337D6000BBFC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		E273CBF92FB337BD000BBFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36UW957XN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elizavetakudinova.BelarusianPoetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BelarusianPoets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BelarusianPoets";
+			};
+			name = Debug;
+		};
+		E273CBFA2FB337BD000BBFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36UW957XN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elizavetakudinova.BelarusianPoetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BelarusianPoets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BelarusianPoets";
+			};
+			name = Release;
+		};
+		E273CC082FB337D6000BBFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36UW957XN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elizavetakudinova.BelarusianPoetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BelarusianPoets;
+			};
+			name = Debug;
+		};
+		E273CC092FB337D6000BBFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36UW957XN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elizavetakudinova.BelarusianPoetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BelarusianPoets;
+			};
+			name = Release;
+		};
 		E2D3764D2FB100190009617F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,6 +556,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E273CBF82FB337BD000BBFC1 /* Build configuration list for PBXNativeTarget "BelarusianPoetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E273CBF92FB337BD000BBFC1 /* Debug */,
+				E273CBFA2FB337BD000BBFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E273CC072FB337D6000BBFC1 /* Build configuration list for PBXNativeTarget "BelarusianPoetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E273CC082FB337D6000BBFC1 /* Debug */,
+				E273CC092FB337D6000BBFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E2D376342FB100170009617F /* Build configuration list for PBXProject "BelarusianPoets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
