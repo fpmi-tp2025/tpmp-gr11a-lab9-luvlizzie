@@ -3,7 +3,7 @@
 //  BelarusianPoets
 //
 //  Created by Кудинова Елизавета on 10.05.2026.
-//  Группа 12, вариант 11
+//  Группа 12, вариант 11 (индивидуальное задание)
 //
 
 import UIKit
@@ -32,6 +32,8 @@ class PoetDetailViewController: UIViewController {
         title = poet.name
         view.backgroundColor = .systemBackground
         
+        navigationController?.navigationBar.accessibilityIdentifier = "detail_nav_bar"
+        
         nameLabel.text = poet.name
         nameLabel.font = UIFont.boldSystemFont(ofSize: 24)
         nameLabel.textAlignment = .center
@@ -54,6 +56,8 @@ class PoetDetailViewController: UIViewController {
         
         // Высота таблицы под контент
         worksTableView.heightAnchor.constraint(equalToConstant: CGFloat(poet.works.count * 44)).isActive = true
+        
+        nameLabel.accessibilityIdentifier = "nameLabel"
     }
 }
 

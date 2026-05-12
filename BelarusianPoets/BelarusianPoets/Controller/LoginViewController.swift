@@ -3,7 +3,7 @@
 //  BelarusianPoets
 //
 //  Created by Кудинова Елизавета on 10.05.2026.
-//  Группа 12, вариант 11
+//  Группа 12, вариант 11 (индивидуальное задание)
 //
 
 import UIKit
@@ -22,6 +22,13 @@ class LoginViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if ProcessInfo.processInfo.arguments.contains("--reset-defaults") {
+            let domain = Bundle.main.bundleIdentifier!
+            UserDefaults.standard.removePersistentDomain(forName: domain)
+            UserDefaults.standard.synchronize()
+        }
+        
         setupUI()
         checkAutoLogin()
     }
@@ -46,6 +53,12 @@ class LoginViewController: UIViewController {
         
         registerButton.setTitle(NSLocalizedString("register_button", comment: ""), for: .normal)
         registerButton.setTitleColor(.systemBlue, for: .normal)
+        
+        view.accessibilityIdentifier = "loginScreen" 
+        loginTextField.accessibilityIdentifier = "loginTextField"
+        passwordTextField.accessibilityIdentifier = "passwordTextField"
+        loginButton.accessibilityIdentifier = "loginButton"
+        registerButton.accessibilityIdentifier = "registerButton"
     }
     
     private func checkAutoLogin() {
@@ -74,23 +87,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "showRegister", sender: nil)
-    }
-    
-    // MARK: - Navigation
-    private func navigateToPoetsList() {
-        print("1. Функция вызвана")
-        print("2. navigationController = \(navigationController)")
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        print("3. Storyboard загружен")
-        
+        if let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController {
+            navigationController?.pushViewController(registerVC, animated: true)
+        }
+    }
+
+    private func navigateToPoetsList() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let poetsVC = storyboard.instantiateViewController(withIdentifier: "PoetsCollectionViewController") as? PoetsCollectionViewController {
-            print("4. Контроллер создан: \(poetsVC)")
             navigationController?.pushViewController(poetsVC, animated: true)
-            print("5. push выполнен")
-        } else {
-            print("4. ОШИБКА: Не удалось создать контроллер")
         }
     }
     

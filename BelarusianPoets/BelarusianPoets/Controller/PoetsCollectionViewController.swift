@@ -3,7 +3,7 @@
 //  BelarusianPoets
 //
 //  Created by Кудинова Елизавета on 10.05.2026.
-//  Группа 12, вариант 11
+//  Группа 12, вариант 11 (индивидуальное задание)
 //
 
 import UIKit
@@ -26,6 +26,10 @@ class PoetsCollectionViewController: UIViewController {
     private func setupUI() {
         title = NSLocalizedString("poets_title", comment: "")
         view.backgroundColor = .systemBackground
+        view.accessibilityIdentifier = "poetsScreen"
+        
+        navigationController?.navigationBar.accessibilityIdentifier = "poets_nav_bar"
+        logoutButton.accessibilityIdentifier = "logoutButton"
     }
 
     private func setupCollectionView() {

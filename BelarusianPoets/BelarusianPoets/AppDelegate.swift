@@ -3,7 +3,7 @@
 //  BelarusianPoets
 //
 //  Created by Елизавета on 10.05.2026.
-//
+//  Группа 12, вариант 11 (индивидуальное задание)
 
 import UIKit
 
@@ -13,7 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if CommandLine.arguments.contains("--reset-defaults") {
+            let defaults = UserDefaults.standard
+            defaults.removeObject(forKey: "isLoggedIn")
+            defaults.removeObject(forKey: "saved_login")
+            defaults.removeObject(forKey: "saved_password")
+        }
         return true
     }
 

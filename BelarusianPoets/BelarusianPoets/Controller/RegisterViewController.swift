@@ -3,7 +3,7 @@
 //  BelarusianPoets
 //
 //  Created by Кудинова Елизавета on 10.05.2026.
-//  Группа 12, вариант 11
+//  Группа 12, вариант 11 (индивидуальное задание)
 //
 
 import UIKit
@@ -24,11 +24,17 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     
     // MARK: - UI Setup
     private func setupUI() {
         title = NSLocalizedString("register_title", comment: "")
         view.backgroundColor = .systemBackground
+        
+        navigationController?.navigationBar.accessibilityIdentifier = "register_nav_bar"
         
         loginTextField.placeholder = NSLocalizedString("login_placeholder", comment: "")
         loginTextField.borderStyle = .roundedRect
@@ -46,6 +52,20 @@ class RegisterViewController: UIViewController {
         registerButton.backgroundColor = .systemGreen
         registerButton.setTitleColor(.white, for: .normal)
         registerButton.layer.cornerRadius = 8
+        
+        view.accessibilityIdentifier = "registerScreen"
+        loginTextField.accessibilityIdentifier = "loginTextField"
+        passwordTextField.accessibilityIdentifier = "passwordTextField"
+        confirmTextField.accessibilityIdentifier = "confirmTextField"
+        registerButton.accessibilityIdentifier = "registerButton"
+        
+        passwordTextField.textContentType = .newPassword
+        passwordTextField.autocorrectionType = .no
+        passwordTextField.autocapitalizationType = .none
+
+        confirmTextField.textContentType = .newPassword
+        confirmTextField.autocorrectionType = .no
+        confirmTextField.autocapitalizationType = .none
     }
     
     // MARK: - Actions
