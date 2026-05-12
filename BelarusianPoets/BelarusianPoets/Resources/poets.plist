@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>id</key>
+        <integer>1</integer>
+        <key>name</key>
+        <string>Янка Купала</string>
+        <key>photoName</key>
+        <string>kupala</string>
+        <key>biography</key>
+        <string>Янка Купала (1882–1942) — народный поэт Беларуси, классик белорусской литературы.</string>
+        <key>works</key>
+        <array>
+            <string>«Жалейка»</string>
+            <string>«Гусляр»</string>
+            <string>«Адвечная песня»</string>
+        </array>
+    </dict>
+    <dict>
+        <key>id</key>
+        <integer>2</integer>
+        <key>name</key>
+        <string>Якуб Колас</string>
+        <key>photoName</key>
+        <string>kolas</string>
+        <key>biography</key>
+        <string>Якуб Колас (1882–1956) — народный поэт Беларуси, писатель, драматург.</string>
+        <key>works</key>
+        <array>
+            <string>«Песні жальбы»</string>
+            <string>«Новая зямля»</string>
+            <string>«Сымон-музыка»</string>
+        </array>
+    </dict>
+    <dict>
+        <key>id</key>
+        <integer>3</integer>
+        <key>name</key>
+        <string>Максим Богданович</string>
+        <key>photoName</key>
+        <string>bogdanovich</string>
+        <key>biography</key>
+        <string>Максим Богданович (1891–1917) — классик белорусской литературы, поэт.</string>
+        <key>works</key>
+        <array>
+            <string>«Вянок»</string>
+            <string>«Слуцкія ткачыхі»</string>
+            <string>«Перапіска»</string>
+        </array>
+    </dict>
+</array>
+</plist>

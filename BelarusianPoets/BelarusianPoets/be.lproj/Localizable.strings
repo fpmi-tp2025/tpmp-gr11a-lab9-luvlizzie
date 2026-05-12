@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  BelarusianPoets
+
+  Created by Елизавета on 10.05.2026.
+  
+*/
+
+"poets_title" = "Беларускія паэты";
+"login_title" = "Аўтарызацыя";
+"register_title" = "Рэгістрацыя";
+"login_placeholder" = "Логін";
+"password_placeholder" = "Пароль";
+"confirm_password" = "Пацвердзіце пароль";
+"login_button" = "Увайсці";
+"register_button" = "Зарэгістравацца";
+"notice" = "Паведамленне";
+"fill_fields" = "Запоўніце ўсе палі";
+"invalid_credentials" = "Няправільны логін ці пароль";
+"passwords_mismatch" = "Паролі не супадаюць";
+"registration_success" = "Рэгістрацыя прайшла паспяхова!";
+"logout" = "Выйсці";

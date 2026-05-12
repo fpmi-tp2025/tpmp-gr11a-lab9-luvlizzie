@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  BelarusianPoets
+
+  Created by Елизавета on 10.05.2026.
+  
+*/
+
+"poets_title" = "Belarusian Poets";
+"login_title" = "Login";
+"register_title" = "Registration";
+"login_placeholder" = "Login";
+"password_placeholder" = "Password";
+"confirm_password" = "Confirm password";
+"login_button" = "Login";
+"register_button" = "Register";
+"notice" = "Notice";
+"fill_fields" = "Please fill all fields";
+"invalid_credentials" = "Invalid login or password";
+"passwords_mismatch" = "Passwords do not match";
+"registration_success" = "Registration successful!";
+"logout" = "Logout";
